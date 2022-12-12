@@ -1,0 +1,177 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #333;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 80.5%;
+}
+
+.container{
+  margin-left: 6rem;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9rem;
+}
+/* Left Side  */
+
+.left-side{
+ text-align: center;
+ line-height: 1.5;
+}
+img{
+  width: 14rem;
+  border-radius: 2.8rem;
+}
+
+.info{
+  font-style: italic;
+}
+
+.social{
+  margin-top: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* Icon */
+
+.icon ul{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon ul li{
+  list-style: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color:  #f5f89a;
+}
+
+.icon ul li:hover{
+  color: #ff0000;
+}
+
+
+
+/* Right-Side */
+
+.right-side{
+  width: 45%;
+  background: linear-gradient(90deg, #e7e9b7, #f1f498e2);
+  padding: 3.1rem 4.3rem;
+  border-top-left-radius: 2.54rem;
+  border-bottom-left-radius: 2.54rem;
+  line-height: 1.5;
+  color: #000;
+}
+
+/* .header{
+  border-bottom: 2px solid #000;
+}
+
+.right-info{
+  border-bottom: 2px solid #000;
+} */
+
+.r-name{
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.edu-header{
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.box{
+  display: flex;
+  gap: 1rem;
+}
+
+.main-box{
+  border-bottom: 2px solid black;
+}
+
+/* Button design  */
+
+.btn{
+  position: relative;
+  padding: 0.6rem 11rem;
+  background: #111;
+  border-radius: 0.2rem;
+  color: #fff;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background: #555;
+}
+
+@media screen and (max-width: 1164px) {
+  html{
+    font-size: 80%;
+  }
+
+  .btn{
+    padding: 0.6rem 10rem;
+  }
+}
+
+@media screen and (max-width: 936px) {
+  html{
+    font-size: 50%;
+  }
+
+  .container{
+    margin-left: 3rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  html{
+    font-size: 50%;
+  }
+
+  .container{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .btn{
+    font-size: 10px;
+    padding: 0.6rem 7rem;
+  }
+}
+
+@media screen and (max-width: 492px) {
+  .container{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .right-side{
+    position: relative;
+    top: -8rem;
+    width: 90%;
+  }
+
+  .btn{
+    padding: 0.7rem 43%;
+  }
+}
